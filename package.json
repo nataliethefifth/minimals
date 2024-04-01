@@ -5,9 +5,9 @@
   "version": "1.8.0",
   "private": false,
   "scripts": {
-    "dev": "vite",
-    "start": "vite preview",
-    "build": "vite build",
+    "dev": "vite --host 0.0.0.0 --port 5173 --base=/minimals/",
+    "build": "vite build --base=/minimals/ --outDir=docs",
+    "preview": "vite preview --port 5173 --host 0.0.0.0 --base=/minimals/ --outDir=docs",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
